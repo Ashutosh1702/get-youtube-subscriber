@@ -117,18 +117,40 @@ background: linear-gradient(45deg, rgba(226, 88, 149, 1.0), rgba(179, 77, 196, 1
 </head>
 
 <body>
-    <img src="./image/alma.png" alt="AlmaBetter" style="width:20rem; margin-bottom: 20px;">
+    <img src="./Images/Logo.png" alt="AlmaBetter" style="width:20rem; margin-bottom: 20px;">
     <div class="container">
         <h1>Get YouTube Subscribers</h1>
         
-        <button id="subscriberButton">Subscribers</button>
+        <button id="subscriberButton" >Subscribers</button>
         <button id="subscriberNameButton">Subscriber by Name</button>
+        
+            
+       
+        
         <div class="flex-container">
             <input type="text" id="subscriberIdInput" placeholder="Enter ID">
             <button id="subscriberIdButton">Subscriber by ID</button>
         </div>
         <h5><b> Demo id :- </b> ( 652e93a359f8791278ab0c70 )</h5>
-    </div>
+        <a href="https://youtu.be/STeMmN5cyqs?si=j2V80cYzrliHCfa_" target="_blank">
+            <img src="./image/youtube.png" style="width: 5%" alt="YouTube Logo">
+            </a>
+    <a href="https://github.com/Ashutosh1702/get-youtube-subscriber" target="_blank" >
+            <img src="./image/github-logo.png" style="width: 5%" alt="GitHub Logo">
+             </a>
+        <a href="https://www.linkedin.com/in/ashutosh-kumar-791887276/" target="_blank"  >
+            <img src="./image/linkedin.png" style="width: 5%;" alt="LinkedIn Logo">
+             </a>
+       
+        <br/>
+
+
+        
+          <button style="color: rgb(237, 232, 232); background-color: #0c0c0c;" id="api-docs" target="_blank">API_Doc</button>
+       
+
+    <body>
+  
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -140,6 +162,10 @@ background: linear-gradient(45deg, rgba(226, 88, 149, 1.0), rgba(179, 77, 196, 1
 
             // Get a reference to the "Subscriber by ID" button element
             var subscriberIdButton = document.getElementById("subscriberIdButton");
+
+            // Get a reference to the "API Docs" button element with the correct id
+            var apiDocsButton = document.getElementById("api-docs");
+
 
             // Add a click event listener to the "Subscribers" button
             subscribersButton.addEventListener("click", function() {
@@ -166,7 +192,13 @@ background: linear-gradient(45deg, rgba(226, 88, 149, 1.0), rgba(179, 77, 196, 1
                     window.location.href = "https://get-youtube-subscribers-f23l.onrender.com/subscribers/" + specificId;
                 }
             });
-        });
+             // Add a click event listener to the "API Docs" button
+             apiDocsButton.addEventListener("click", function() {
+    // Open the API documentation link in a new tab
+    window.open("https://get-youtube-subscribers-f23l.onrender.com/api-docs/", "_blank");
+});
+   });
+
     </script>
 </body>
 
